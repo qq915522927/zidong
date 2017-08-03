@@ -108,7 +108,7 @@ class JobApplicaion(object):
         inp_cap.clear()
 
         inp_username.send_keys(phone)
-        code = raw_input('请输入验证码:')
+        code = raw_input('please type capatcha:')
         inp_cap.send_keys(code)
 
         if check:
@@ -377,7 +377,7 @@ class JobAppTest(unittest.TestCase):
 
     def test_a_index_n1(self):
         time.sleep(1)
-        result = JobApplicaion.index_n1('入口页测试', _login_url, driver)
+        result = JobApplicaion.index_n1(u'入口页测试', _login_url, driver)
         driver.save_screenshot('captcha.png')
         self.assertTrue(result)
 

@@ -1,0 +1,201 @@
+[INFO  - 2017-08-03T09:51:57.644Z] GhostDriver - Main - running on port 65384
+[INFO  - 2017-08-03T09:52:00.430Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-03T09:52:00.430Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.customHeaders:  - {}
+[INFO  - 2017-08-03T09:52:00.430Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-03T09:52:00.430Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 652c6b70-7831-11e7-83f7-c597209a2e9a
+[ERROR - 2017-08-03T09:52:02.030Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.optimizely.get')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:02.031Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  k (https://cn.app.seedlinktech.com/drago/position/3657/:3)
+  initNewOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/position/3657/:4)
+  initOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/position/3657/:4)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:06.188Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.optimizely.get')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:06.188Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  k (https://cn.app.seedlinktech.com/drago/candidate/login/?next=/drago/answer/basic/&p[INFO  - 2017-08-03T09:56:10.020Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+d=3657&signup=true:4)
+  initOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/candidate/login/?next=/drago/answer/basic/&pid=3657&signup=true:4)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.992Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to disable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.992Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.99[INFO  - 2017-08-03T09:53:11.776Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-03T09:58:11.785Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.994Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.994Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.995Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:12.995Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.490Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to disable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.490Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.491Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to disable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.491Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.491Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.491Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.491Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.492Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.492Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.492Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.492Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.493Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.575Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.575Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.575Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:18.575Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.735Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to disable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.735Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.735Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to disable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.735Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.736Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.736Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.736Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.736Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.736Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.736Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.737Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:39.737Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.797Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.797Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.797Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.798Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.798Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.798Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.799Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: Invalid element to enable
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:40.799Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  error (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:41.047Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.optimizely.get')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:52:41.047Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  k (https://cn.app.seedlinktech.com/drago/answer/basic/?pid=3657:3)
+  initNewOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/answer/basic/?pid=3657:4)
+  initOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/answer/basic/?pid=3657:4)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:53:27.343Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.optimizely.get')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:53:27.343Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  k (https://cn.app.seedlinktech.com/drago/question/hunting/?pid=3657&nowPage=1:3)
+  initNewOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/question/hunting/?pid=3657&nowPage=1:4)
+  initOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/question/hunting/?pid=3657&nowPage=1:4)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:53:46.328Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.optimizely.get')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T09:53:46.328Z] Session [652c6b70-7831-11e7-83f7-c597209a2e9a] - page.onError - stack:
+  k (https://cn.app.seedlinktech.com/drago/application/thankyou/?pid=3657&from=oeq:3)
+  initNewOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/application/thankyou/?pid=3657&from=oeq:4)
+  initOptimizelyIntegration (https://cn.app.seedlinktech.com/drago/application/thankyou/?pid=3657&from=oeq:4)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-08-03T09:56:57.857Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
