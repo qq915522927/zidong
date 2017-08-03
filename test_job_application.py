@@ -88,6 +88,7 @@ class JobApplicaion(object):
     @output
     def register_n2(dsc,phone, check, result, driver):
         '''
+        注册页面
         :param dsc: ，描述
         :param phone: 电话或email
 
@@ -269,7 +270,7 @@ class JobApplicaion(object):
         inp_answer = driver.find_element_by_id('post')
         inp_answer.send_keys(answer)
         time.sleep(1)
-
+        #获取字数
         nums = driver.find_elements_by_xpath('//div[@class="open-ended-box"]//p[@class="at-least"]/span')
         l = filter(lambda num:num.text!='',nums)
         num = l[0].text
@@ -282,6 +283,7 @@ class JobApplicaion(object):
             else:
                 return False
         if len(answer) >= 100:
+            #获取点击按钮
             btns = driver.find_elements_by_xpath(
                 '//footer//aside[2]/button[1]')
             btn_l = filter(lambda btn:btn.text!='',btns)
@@ -289,6 +291,7 @@ class JobApplicaion(object):
             if btn.get_attribute('disabled') != u'true':
                 if btn.text == u'下一步':
                     time.sleep(1)
+                    #获取点击前的页码
                     orign_indexs = driver.find_elements_by_xpath(
                         '//div[@class="open-ended-box"]//h2/em')
                     o_l=filter(lambda orgin:orgin.text!='',orign_indexs)
@@ -302,6 +305,7 @@ class JobApplicaion(object):
                     indexs = driver.find_elements_by_xpath('//div[@class="open-ended-box"]//h2/em')
                     i_l = filter(lambda index: index.text != '',indexs)
                     index = i_l[0].text
+
                     if int(index) == int(orign_index) + 1:
                         return True
                 if btn.text == u'完成':
