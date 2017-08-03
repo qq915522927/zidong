@@ -196,7 +196,7 @@ class JobApplicaion(object):
 
             errors = driver.find_elements_by_xpath('//em[@class="wrong animated bounceInRight"]')
             time.sleep(1)
-            driver.save_screenshot('1.png')
+
             for error in errors:
                 if error.text in empty_list:
                     correct_count += 1
@@ -237,7 +237,7 @@ class JobApplicaion(object):
 
         if dsc == u'邮箱已被使用':
 
-            driver.save_screenshot('1.png')
+
             err_pwd = driver.find_element_by_xpath('//*[@id="email-wrong"]/em')
 
             if err_pwd.is_displayed():
@@ -276,7 +276,7 @@ class JobApplicaion(object):
         num = l[0].text
 
 
-        driver.save_screenshot('1.png')
+
         if len(answer) < 100:
             if len(answer) == int(num):
                 return True
@@ -318,6 +318,7 @@ class JobApplicaion(object):
                     if btn_confr.is_displayed() and finish_info == u"点击 '完成'，答案会被自动保存":
                         btn_confr.click()
                         time.sleep(2)
+                        driver.save_screenshot('1.png')
                         if driver.current_url == _thank_url:
                             return True
             else:
@@ -349,7 +350,7 @@ class JobAppTest(unittest.TestCase):
     # info_list =[(u'信息正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'ABCabc123123',
     #      driver),]
     answer_list = [(u'问题一回答少于100字',u'少于100字',driver),
-                   (u'问题一回答多于',answer1,driver),
+                   (u'问题一回答多于100字',answer1,driver),
                    (u'问题二回答少于100字',u'少于100字',driver),
                    (u'问题二回答多于100字',answer2,driver),
                    (u'问题三回答少于100字',u'少于100字',driver),
@@ -400,6 +401,7 @@ class JobAppTest(unittest.TestCase):
 if __name__ == '__main__':
     driver.get(_start_url)
     unittest.main()
+    driver.close()
 
     # driver = webdriver.PhantomJS()
 
