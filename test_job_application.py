@@ -321,29 +321,29 @@ class JobApplicaion(object):
 
 
 class JobAppTest(unittest.TestCase):
-    # register_task_list = [(u'测试手机号或邮箱错误', '1878778', True, u'请输入手机或邮箱', driver),
-    #                       (u'测试验证码错误', '{:d}1'.format(int(time.time())), True, u'请正确输入图中文字或点击图片换一张', driver),
-    #                       (u'测试不同意协议', '{:d}1'.format(int(time.time())), False, u'', driver),
-    #                       (u'注册信息正确', '{:d}@qq.com'.format(int(time.time())), True, u'', driver), ]
-    #
-    # info_list = [
-    #     (u'用户名为空', '', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'abcABC123', driver),
-    #     (u'电话为空', 'wuzhiwen', '', '{:d}@qq.com'.format(int(time.time())), 'abcABC123', driver),
-    #     (u'邮件为空', 'wuzhiwen', '{:d}1'.format(int(time.time())), '', 'abcABC123', driver),
-    #     (u'密码为空', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), '', driver),
-    #     (u'邮箱格式不正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '23423423', 'abcABC123', driver),
-    #     (u'电话格式不正确', 'wuzhiwen', '453453gdf', '23423423', 'abcABC123', driver),
-    #     (u'密码格式不正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'abc123123',
-    #      driver),
-    #     (u'电话已被使用', 'wuzhiwen', '18301929561', '{:d}@qq.com'.format(int(time.time())), 'ABCa3bc123123', driver),
-    #     (u'邮箱已被使用', 'wuzhiwen', '{:d}1'.format(int(time.time())), '915522927@qq.com', 'ABCa3bc123123', driver),
-    #     (u'信息正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'ABCabc123123',
-    #      driver),
-    #
-    # ]
-    register_task_list = [  (u'注册信息正确', '{:d}@qq.com'.format(int(time.time())), True, u'', driver), ]
-    info_list =[(u'信息正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'ABCabc123123',
-         driver),]
+    register_task_list = [(u'测试手机号或邮箱错误', '1878778', True, u'请输入手机或邮箱', driver),
+                          (u'测试验证码错误', '{:d}1'.format(int(time.time())), True, u'请正确输入图中文字或点击图片换一张', driver),
+                          (u'测试不同意协议', '{:d}1'.format(int(time.time())), False, u'', driver),
+                          (u'注册信息正确', '{:d}@qq.com'.format(int(time.time())), True, u'', driver), ]
+
+    info_list = [
+        (u'用户名为空', '', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'abcABC123', driver),
+        (u'电话为空', 'wuzhiwen', '', '{:d}@qq.com'.format(int(time.time())), 'abcABC123', driver),
+        (u'邮件为空', 'wuzhiwen', '{:d}1'.format(int(time.time())), '', 'abcABC123', driver),
+        (u'密码为空', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), '', driver),
+        (u'邮箱格式不正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '23423423', 'abcABC123', driver),
+        (u'电话格式不正确', 'wuzhiwen', '453453gdf', '23423423', 'abcABC123', driver),
+        (u'密码格式不正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'abc123123',
+         driver),
+        (u'电话已被使用', 'wuzhiwen', '18301929561', '{:d}@qq.com'.format(int(time.time())), 'ABCa3bc123123', driver),
+        (u'邮箱已被使用', 'wuzhiwen', '{:d}1'.format(int(time.time())), '915522927@qq.com', 'ABCa3bc123123', driver),
+        (u'信息正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'ABCabc123123',
+         driver),
+
+    ]
+    # register_task_list = [  (u'注册信息正确', '{:d}@qq.com'.format(int(time.time())), True, u'', driver), ]
+    # info_list =[(u'信息正确', 'wuzhiwen', '{:d}1'.format(int(time.time())), '{:d}@qq.com'.format(int(time.time())), 'ABCabc123123',
+    #      driver),]
     answer_list = [(u'问题一回答少于100字',u'少于100字',driver),
                    (u'问题一回答多于',answer1,driver),
                    (u'问题二回答少于100字',u'少于100字',driver),
