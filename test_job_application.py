@@ -76,7 +76,7 @@ class JobApplicaion(object):
         '''
         time.sleep(2)
 
-        driver.find_element_by_link_text("开始").click()
+        driver.find_element_by_xpath('/html/body/div[4]/div/div/footer/div/div/a').click()
         time.sleep(1)
         if result == driver.current_url:
             return True
