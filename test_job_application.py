@@ -188,19 +188,22 @@ class JobApplicaion(object):
         time.sleep(1.5)
 
         if name == '' or phone == '' or email == '' or pwd == '':
+            #填入信息中任何一个为空
             correct_count = 0
             empty_list = []
+            #获取预期为空的错误信息，存入列表
             for x, y in {u'请输入姓名': name, u'请输入手机号': phone, u'请输入邮箱': email, u'密码不应为空': pwd}.items():
                 if y == '':
                     empty_list.append(x)
-
+            #找到所有的错误提示元素
             errors = driver.find_elements_by_xpath('//em[@class="wrong animated bounceInRight"]')
             time.sleep(1)
-
+            #遍历所有的错误提示，如果他为displayed且text值在预期的列表中，则说明这个错误提示符合预期
             for error in errors:
                 if error.text in empty_list:
                     correct_count += 1
-            print correct_count
+            # print correct_count
+            #最后比较所有的符合预期的错误信息数量是否和预期数量相等，相等则true
             if correct_count == len(empty_list):
                 return True
             else:
@@ -289,13 +292,14 @@ class JobApplicaion(object):
             btn_l = filter(lambda btn:btn.text!='',btns)
             btn = btn_l[0]
             if btn.get_attribute('disabled') != u'true':
-                if btn.text == u'下一步':
-                    time.sleep(1)
-                    #获取点击前的页码
-                    orign_indexs = driver.find_elements_by_xpath(
-                        '//div[@class="open-ended-box"]//h2/em')
-                    o_l=filter(lambda orgin:orgin.text!='',orign_indexs)
-                    orign_index=o_l[0].text
+
+                time.sleep(1)
+                #获取点击前的页码
+                orign_indexs = driver.find_elements_by_xpath(
+                    '//div[@class="open-ended-box"]//h2/em')
+                o_l=filter(lambda orgin:orgin.text!='',orign_indexs)
+                orign_index=o_l[0].text
+                if int(orign_index) in [1,2]:
 
                     # if orign_index == u'':
                     #     orign_index = 1
@@ -308,14 +312,15 @@ class JobApplicaion(object):
 
                     if int(index) == int(orign_index) + 1:
                         return True
-                if btn.text == u'完成':
+                else:
                     # 右下角提示信息
                     finish_info = driver.find_element_by_xpath(
                         '/html/body/div[4]/div/div/div[1]/div/div[3]/div/div[3]/article/p/em[1]').text
                     btn.click()
                     time.sleep(1)
                     btn_confr = driver.find_element_by_id('finish-save')
-                    if btn_confr.is_displayed() and finish_info == u"点击 '完成'，答案会被自动保存":
+                    if btn_confr.is_displayed():
+                            # and finish_info == u"点击 '完成'，答案会被自动保存":
                         btn_confr.click()
                         time.sleep(2)
                         driver.save_screenshot('1.png')
